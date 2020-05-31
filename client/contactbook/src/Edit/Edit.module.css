@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #215732;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .container div {
+        width: 90vw;
+    }
+    input[type='text'], input[type='date'] {
+        border: 1px solid #1b1b1b;
+        width: 100%;
+    }
+}

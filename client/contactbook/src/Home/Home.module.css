@@ -1,0 +1,99 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottomRight {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.contactList {
+    padding: 20px;
+    width: 60%;
+    border: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.contactBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+    text-align: right;
+}
+
+.break button {
+    margin-right: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    outline: none;
+}
+
+.danger {
+    background-color: #b52e31;
+}
+
+.green {
+    background-color: #215732;
+}
+
+.active {
+    height: auto;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.disable {
+    height: 0;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pagination button {
+    margin-right: 15px;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    background: #df3f42;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .contactList {
+        padding: 20px;
+        width: 90%;
+        border: 1px solid #f4f4f4;
+        margin-bottom: 20px;
+    }
+}
