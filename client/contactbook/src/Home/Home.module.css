@@ -35,7 +35,9 @@
 
 .break {
     flex-basis: 100%;
-    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: right;
 }
 

@@ -71,6 +71,7 @@ export default function AddContact() {
     }
 
     const handleSave = (e) => {
+        if(name.length === 0 || date.length === 0 || phone.length === 0 ) return  alert('Please enter the fields');
         Axios.post('/contacts/save',{
             name,
             email,

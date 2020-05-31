@@ -143,14 +143,21 @@ function Home() {
                 </div>
                 <div className={cx(style.details, style.disable)} id={eachContact._id}>
                     <div className={style.break}>
-                        <Link to={{pathname: `edit/${eachContact._id}`, state: eachContact}} >
-                        <button className={style.green}>
-                            Edit
-                        </button>
-                        </Link>
-                        <button className={style.danger} onClick={()=>deleteContact(eachContact._id)}>
-                            Delete
-                        </button>
+                        <div style={{textAlign: "left"}}>
+                            {
+                                eachContact.dob
+                            }
+                        </div>
+                        <div>
+                            <Link to={{pathname: `edit/${eachContact._id}`, state: eachContact}} >
+                            <button className={style.green}>
+                                Edit
+                            </button>
+                            </Link>
+                            <button className={style.danger} onClick={()=>deleteContact(eachContact._id)}>
+                                Delete
+                            </button>
+                        </div>
                     </div>
                     <br />
                     <p>

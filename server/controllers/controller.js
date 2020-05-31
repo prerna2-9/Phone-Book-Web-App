@@ -4,6 +4,9 @@ const Contact = require('../Database/schema');
 exports.get = async (req, res) => {
     Contact.find()
     .select('_id name email phone dob')
+    .sort({
+        name: 1
+    })
     .exec()
     .then(data => {
         const page = req.params.page;
@@ -29,6 +32,9 @@ exports.get = async (req, res) => {
 exports.search = async (req, res)=>{
     Contact.find()
     .select('_id name email phone dob')
+    .sort({
+        name: 1
+    })
     .exec()
     .then(data => {
         const page = req.params.page;
